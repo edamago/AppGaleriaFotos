@@ -33,7 +33,12 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
     }
 
     private fun tomarFoto() {
-        abrirCamara.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+        //abrirCamara.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+        val intentCamara = Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
+            it.resolveActivity(packageManager).also {
+                componente ->
+            }
+        }
     }
 
     private val abrirCamara = registerForActivityResult(
