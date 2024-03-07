@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "pe.edu.idat.appgaleriafotos"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "pe.edu.idat.appgaleriafotos"
